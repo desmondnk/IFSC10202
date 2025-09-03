@@ -8,7 +8,7 @@ seconds_in_year = 365 * seconds_in_day
 
 # calculate number of years
 years = total_seconds // seconds_in_year
-remaining_seconds = remaining_seconds % seconds_in_year
+remaining_seconds = total_seconds % seconds_in_year
 
 # calculate number of days
 days = remaining_seconds // seconds_in_day
@@ -26,5 +26,5 @@ seconds = remaining_seconds % seconds_in_minute
 print("years  :", years)
 print("days  :",days)
 print("hours :",hours)
-print("minute :",minute)
+print("minute :",minutes)
 print("seconds :",seconds)
